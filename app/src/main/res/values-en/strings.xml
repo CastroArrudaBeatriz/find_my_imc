@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Find my IMC</string>
-    <string name="height_label">Altura (ex.: 1,50)</string>
-    <string name="weight_label">Peso (ex.: 50,0)</string>
-    <string name="calculate_button_label">Calcular</string>
-    <string name="clear_button_label">Limpar</string>
-    <string name="imc_display_text">Seu IMC: </string>
+    <string name="height_label">Height (ex.: 1.50)</string>
+    <string name="weight_label">Weight (ex.: 50.0)</string>
+    <string name="calculate_button_label">Calculate</string>
+    <string name="clear_button_label">Clear</string>
+    <string name="imc_display_text">Your IMC: </string>
+    <string name="know_imc_label">Know your IMC:</string>
+    <string name="slimness_display_label">SLIMNESS (less than 18.5)</string>
+    <string name="normal_display_label">NORMAL (between 18.5 and 24.9)</string>
+    <string name="overweight_display_label">OVERWEIGHT (between 25.0 and 29.9)</string>
+    <string name="obesity_display_label">OBESITY (between 30.0 and 39.9)</string>
+    <string name="gravity_obesity_label">GRAVITY OBESITY (bigger than 40.0)</string>
 </resources>

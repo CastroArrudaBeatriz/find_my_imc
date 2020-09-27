@@ -26,17 +26,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/height_label"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimary"/>
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/weight_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="89dp"
+            android:paddingStart="75dp"
             android:text="@string/weight_label"
-            android:textStyle="bold"
             android:textColor="@color/colorAccent"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@id/height_label" />
 
     </LinearLayout>
@@ -73,9 +73,9 @@
         android:id="@+id/buttons_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
+        android:paddingTop="20dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/imc_display"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dimensions_horizontal">
@@ -110,7 +110,72 @@
         android:clickable="false"
         android:textAlignment="textStart"
         android:textColor="@color/defaultTextColor"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/know_imc_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/know_imc_label"
+        app:layout_constraintTop_toBottomOf="@id/imc_display"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <LinearLayout
+        android:id="@+id/know_imc_buttons_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/know_imc_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <Button
+            android:id="@+id/slimness_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/slimness_display_label"
+            android:clickable="false"/>
+
+        <Button
+            android:id="@+id/normal_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/normal_display_label"
+            android:clickable="false"/>
+
+        <Button
+            android:id="@+id/overweight_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/overweight_display_label"
+            android:clickable="false"/>
+
+        <Button
+            android:id="@+id/obesity_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/obesity_display_label"
+            android:clickable="false"/>
+
+        <Button
+            android:id="@+id/gravity_obesity_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/gravity_obesity_label"
+            android:clickable="false"/>
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

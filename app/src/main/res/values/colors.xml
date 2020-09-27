@@ -5,4 +5,5 @@
     <color name="colorAccent">#0bffae</color>
     <color name="defaultTextColor">#ffffff</color>
     <color name="colorDisplay">#ffae0b</color>
+    <color name="colorDisableButton">#C0C0C0</color>
 </resources>
