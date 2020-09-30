@@ -2,6 +2,7 @@ package com.example.find_my_imc
 
 import android.graphics.Color
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -46,5 +47,26 @@ class MainActivity : AppCompatActivity() {
                 applicationContext)
         }
     }
+
+    override fun onStart() {super.onStart()}
+
+    override fun onResume() {super.onResume()}
+
+    override fun onPause() {super.onPause()}
+
+    override fun onStop() {super.onStop()}
+
+    override fun onDestroy() {super.onDestroy()}
+
+    override fun onRestart() {super.onRestart()}
+
+    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
+        super.onSaveInstanceState(outState, outPersistentState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+    }
+
 
 }

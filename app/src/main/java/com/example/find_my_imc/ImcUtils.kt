@@ -99,7 +99,7 @@ object ImcUtil {
      * @param applicationContext
      * @return void
      * **/
-    fun changeButtonColor(button: Button, isClear: Boolean, applicationContext: Context){
+    private fun changeButtonColor(button: Button, isClear: Boolean, applicationContext: Context){
         if(isClear) button.setBackgroundColor(ContextCompat.getColor(applicationContext, R.color.colorDisableButton))
         else button.setBackgroundColor(ContextCompat.getColor(applicationContext,R.color.colorAccent))
     }
